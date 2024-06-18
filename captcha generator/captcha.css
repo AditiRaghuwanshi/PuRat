@@ -1,0 +1,68 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html, body{
+	font-family: 'Open Sans';
+	font-weight: lighter;
+	font-size: 12px;
+	width: 100%;
+	height: 100%;
+}
+
+#success, #fail{
+	display: none;
+
+}
+
+#message, #success, #fail{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.container{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+p{
+	display: inline;
+	margin-right: 5px;
+}
+
+input, button{
+	font-family: 'Open Sans';
+	font-weight: lighter;
+	font-size: 12px;
+}
+
+input{
+	border: 1px solid #FFBBD7;
+	width: 30px;
+	height: 20px;
+	text-align: center;
+}
+
+button{
+	border: none;
+    border-radius: 1.5em;
+    color: #FFF;
+    background: #FFBBD7;
+    padding: 2.5px 10px;
+    width: 75px;
+    height: 30px;
+    cursor: pointer;
+    transition: background .5s ease-in-out;
+}
+
+button:hover:enabled{
+	background: #303030;
+}
+
+button:disabled{
+	opacity: .5;
+	cursor: default;
+}

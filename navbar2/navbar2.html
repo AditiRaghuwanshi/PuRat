@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar with Sidebar</title>
+  <link rel="stylesheet" href="navbar2.css">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="sidebar-content">
+      <div class="user-info bg-light p-4 rounded flex items-center justify-between">
+        <div class="flex items-center">
+          <img src="/navbar2/communication-account-profile-person-user-icon.256x256.png" alt="User Icon" class="user-icon-img mr-2">
+          <div>
+            <h2 class="text-lg">username</h2>
+            <p class="text-sm text-gray-600">username@gmail.com</p>
+          </div>
+        </div>
+        <button class="btn signout-btn">Sign out</button>
+      </div>
+       
+      <div class="flex justify-between mb-4">
+        <button class="btn">Settings</button>
+        <button class="btn">Copy click-to-chat link</button>
+      </div>
+      <div class="flex justify-between text-sm text-gray-600 mb-4">
+        <span><i class="fas fa-info-circle"></i> Change Info</span>
+        <span><i class="fas fa-bell"></i> Manage Notifications</span>
+      </div>
+      <button class="btn block w-full">Manage Accounts</button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main">
+    <div class="navbar bg-white">
+      <div class="flex-1">
+        <div class="navbar-toggle lg:hidden" onclick="toggleHamburgerMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <a class="btn btn-ghost text-2xl logo">PuRat</a>
+      </div>
+      <div class="hidden lg:flex lg:flex-auto">
+        <ul class="menu menu-horizontal p-0 flex justify-start items-center w-full">
+          <li><a href="#"><i class="fas fa-inbox"></i> TeamInbox</a></li>
+          <li><a href="#"><i class="fas fa-broadcast-tower"></i> Broadcast</a></li>
+          <li><a href="#"><i class="fas fa-robot"></i> Chatbots</a></li>
+          <li><a href="#"><i class="fas fa-address-book"></i> Contacts</a></li>
+          <li><a href="#"><i class="fas fa-cogs"></i> Automations</a></li>
+          <li class="dropdown dropdown-hover">
+            <label tabindex="0" class="btn btn-ghost normal-case text-1xl">More</label>
+            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-white rounded-box w-52">
+              <li><a href="#"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+              <li><a href="#"><i class="fas fa-code"></i> API docs</a></li>
+              <li><a href="#"><i class="fas fa-users"></i> User Management</a></li>
+              <li><a href="#"><i class="fas fa-plug"></i> Integration</a></li>
+              <li><a href="#"><i class="fas fa-exchange-alt"></i> Web Hooks</a></li>
+              <li><a href="#"><i class="fas fa-shopping-cart"></i> Commerce</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="flex-none flex items-center">
+        <div class="dropdown dropdown-end notification-icon">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle text-1xl p-2">
+            <i class="fas fa-bell"></i>
+          </div>
+        </div>
+        <div class="user-icon" id="userIcon">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar text-1xl p-2">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hamburger Menu for Mobile -->
+    <div id="hamburgerMenu" class="hamburger-menu hidden">
+      <ul class="menu menu-vertical p-4">
+        <li><a href="#"><i class="fas fa-inbox"></i> TeamInbox</a></li>
+        <li><a href="#"><i class="fas fa-broadcast-tower"></i> Broadcast</a></li>
+        <li><a href="#"><i class="fas fa-robot"></i> Chatbots</a></li>
+        <li><a href="#"><i class="fas fa-address-book"></i> Contacts</a></li>
+        <li><a href="#"><i class="fas fa-cogs"></i> Automations</a></li>
+        <li><a href="#"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+        <li><a href="#"><i class="fas fa-code"></i> API docs</a></li>
+        <li><a href="#"><i class="fas fa-users"></i> UserManagement</a></li>
+        <li><a href="#"><i class="fas fa-plug"></i> Integration</a></li>
+        <li><a href="#"><i class="fas fa-exchange-alt"></i> Web Hooks</a></li>
+        <li><a href="#"><i class="fas fa-shopping-cart"></i> Commerce</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="navbar2.js"></script>
+</body>
+</html>

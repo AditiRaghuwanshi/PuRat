@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Chat UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="sample.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <i class="fas fa-arrow-left back-icon"></i>
+            <i class="fas fa-user-circle user-icon"></i>
+            <div class="icons">
+                <i class="fas fa-video"></i>
+                <i class="fas fa-phone"></i>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+        <div class="messages" id="messages"></div>
+        <div class="chat-footer">
+            <div class="message-box">
+                <i class="far fa-smile icon"></i>
+                <input type="text" id="messageInput" placeholder="Message" />
+                <i class="fas fa-paperclip icon"></i>
+                <i class="fas fa-rupee-sign icon" aria-hidden="true"></i>
+                <i class="fas fa-camera icon"></i>
+            </div>
+            <div class="microphone" onclick="sendMessage()">
+                <img src="/sample/send.256x253.png" alt="send" />
+            </div>
+        </div>
+    </div>
+    <script src="sample.js"></script>
+</body>
+</html>

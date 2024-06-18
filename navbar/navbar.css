@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #ffffff; /* Change navbar color to white */
+  color: #000000; /* Change text color to black */
+}
+
+.navbar-icons {
+  display: inline-block;
+}
+
+.navbar .navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000; /* Change logo color to black */
+  display: inline-block;
+}
+
+.navbar .navbar-brand:hover {
+  color: #000000; /* Keep logo color black on hover */
+}
+
+.navbar .navbar-toggle {
+  display: none;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.navbar .ml-auto {
+  margin-left: auto;
+  display: inline-block;
+  align-items: center;
+}
+
+.navbar .ml-auto .btn {
+  margin-right: 15px;
+}
+
+.navbar .ml-auto .nav-link {
+  color: #000000; /* Change icons color to black */
+  font-size: 18px;
+  margin-left: 15px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.navbar .navbar-icons {
+  display: flex; /* Ensure the icons are displayed in a flex container */
+  align-items: center; /* Align items vertically */
+}
+
+.navbar .ml-auto .btn,
+.navbar .ml-auto .nav-link {
+  display: inline-block; /* Change display to inline-block */
+  margin-right: 15px;
+}
+
+.navbar .ml-auto .nav-link:hover {
+  color: #adb5bd;
+}
+
+.dropdown-item {
+  display: inline-block;
+}
+
+.more-menu {
+  display: none;
+}
+
+.more-menu.show {
+  display: block;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar-toggle {
+      display: inline-block;
+      cursor: pointer;
+      margin-right: 15px;
+  }
+
+  .navbar .collapse {
+      display: none;
+  }
+
+  .navbar .navbar-collapse {
+      display: none !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar-toggle {
+      display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar .navbar-brand {
+      margin-left: 0; /* Remove margin */
+  }
+
+  .navbar .navbar-collapse {
+      display: none;
+  }
+
+  .navbar .ml-auto .btn,
+  .navbar .ml-auto .nav-link {
+      margin-right: 10px; /* Adjust margin */
+  }
+}

@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.chat-container {
+  width: 350px;
+  height: 650px;
+  background-color: #fff;
+  border-radius: 35px;
+  border: 10px solid white;
+  box-shadow: 0 4px 1cap gray;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-header {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(12, 58, 48); /* Green background */
+  border-top-left-radius: 15px; /* Match border radius of container */
+  border-top-right-radius: 20px; /* Match border radius of container */
+}
+
+.chat-header .user-icon {
+  font-size: 30px; /* Increase the size of the user icon */
+  color: white; /* Change the color to white */
+  position: relative;
+  right: 70px;
+}
+
+.chat-header .back-icon {
+  font-size: 20px;
+  color: white; /* Change the color to white */
+  position: relative;
+  
+}
+
+.chat-header .icons i {
+  font-size: 20px;
+  color: white; /* Change the color to white */
+  margin: 0 10px;
+}
+
+.messages {
+  flex: 1;
+  padding: 10px;
+  background: linear-gradient(to bottom, 
+              rgb(7, 94, 95) 0%, 
+              transparent 0%, 
+              transparent 100%), 
+              url('/whatsapp/image.png') no-repeat center center;
+  background-size: cover;
+  overflow-y: auto;
+}
+
+.chat-footer {
+  display: flex;
+  align-items: center;
+  padding: 10px 0; /* Adjusted padding */
+  border-top: none; /* Removed the border */
+  background-color: grey; /* Background color */
+}
+
+.chat-footer .message-box {
+  display: flex;
+  align-items: center;
+  flex-grow: 0.5;
+  border-radius: 20px;
+  background-color: rgb(235, 230, 230);
+  padding: 9px;
+  margin: 0 9px;
+}
+
+.chat-footer .message-box input[type="text"] {
+  flex-grow: 1;
+  border: none;
+  background: none;
+  color: white;
+  margin: 0 5px;
+}
+
+.chat-footer .message-box input[type="text"]::placeholder {
+  color: rgb(237, 236, 236); /* Placeholder color */
+}
+
+.chat-footer .message-box .icon {
+  font-size: 20px;
+  color: black;
+  margin: 0 3px;
+}
+
+.chat-footer .message-box .fa-paperclip {
+  transform: rotate(-45deg); /* Ensure the paperclip is upright */
+}
+
+.chat-footer .microphone {
+  background-color: #25D366;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-footer .microphone img {
+  width: 20px;
+  height: 20px;
+}

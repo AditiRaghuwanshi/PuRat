@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #ECE5DD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.phone-outline {
+  border: 3px solid grey; /* Black border around the phone */
+  border-radius: 2px; /* Rounded corners */
+  padding: 2.5px; /* Space between border and chat container */
+}
+.chat-container {
+  outline: 4px;
+  width: 400px;
+  height: 700px;
+  background-color: #ECE5DD; /* Same as body color to blend in */
+  border-radius: 28px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 10px solid #a09b9b;
+}
+.chat-header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent; /* Remove white background */
+}
+.chat-header .user-icon {
+  font-size: 30px; /* Increase the size of the user icon */
+  color: black;
+  position: relative;
+  left: 25px;
+}
+.chat-header .back-icon {
+  font-size: 20px;
+  color: black; /* Change the color to black */
+  position: relative;
+  right: 142px;
+
+}
+.chat-header .icons i {
+  font-size: 20px;
+  color: black; /* Change the color to black */
+  margin: 0 10px;
+}
+.chat-content {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: beige;
+}
+
+.chat-footer {
+  display: flex;
+  align-items: center;
+  padding: 10px 0; /* Adjusted padding */
+  border-top: none; /* Removed the border */
+  background-color: transparent; /* Remove white background */
+}
+.chat-footer .message-box {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  border-radius: 20px;
+  background-color: rgb(235, 230, 230);
+  padding: 5px;
+  margin: 0 10px;
+}
+.chat-footer .message-box input[type="text"] {
+  flex-grow: 1;
+  border: none;
+  background: none;
+  color: white;
+  margin: 0 5px;
+}
+.chat-footer .message-box input[type="text"]::placeholder {
+  color: rgb(237, 236, 236); /* Placeholder color */
+}
+.chat-footer .message-box .icon {
+  font-size: 20px;
+  color: black;
+  margin: 0 5px;
+}
+.chat-footer .message-box .fa-paperclip {
+  transform: rotate(-45deg); /* Ensure the paperclip is upright */
+}
+.chat-footer .microphone {
+  background-color: #25D366;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.chat-footer .microphone img {
+  width: 20px;
+  height: 20px;
+}

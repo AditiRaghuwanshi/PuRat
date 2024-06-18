@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: #ffffff;
+    color: #000000;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    padding: 0 20px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    right: 0;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    padding-top: 50px;
+}
+
+.sidebar-content {
+    padding: 20px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: #818181;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-right .3s ease;
+    padding: 0;
+    padding-top: 60px;
+    background-color: white;
+    min-height: 100vh;
+}
+
+.user-info {
+    text-align: left;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.user-info p {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.user-info .btn {
+    border: 1px solid #000000;
+    background-color: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.user-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.user-actions .btn {
+    flex: 1;
+    margin-right: 10px;
+    border: 1px solid #000000;
+    background-color: transparent;
+}
+
+.user-actions .btn:last-child {
+    margin-right: 0;
+}
+
+.signout-btn {
+    margin-left: auto;
+}
+
+.btn {
+    font-weight: normal;
+    text-transform: none;
+    background-color: transparent;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+    color: #000000;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 80px;
+    width: 250px;
+    height: 100%;
+    display: none; /* Hidden by default */
+}
+
+.hamburger-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hamburger-menu li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu li a {
+    color: #333333;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.hamburger-menu li a:hover {
+    background-color: #e0e0e0;
+    padding: 5px;
+}
